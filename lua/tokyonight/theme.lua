@@ -21,8 +21,8 @@ function M.setup(config)
     Cursor = { fg = c.bg, bg = c.fg }, -- character under the cursor
     lCursor = { fg = c.bg, bg = c.fg }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
     CursorIM = { fg = c.bg, bg = c.fg }, -- like Cursor, but used when in IME mode |CursorIM|
-    CursorColumn = { bg = c.bg_highlight }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
-    CursorLine = { bg = c.bg_highlight }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
+    CursorColumn = { bg = c.crosshair }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
+    CursorLine = { bg = c.crosshair }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
     Directory = { fg = c.blue }, -- directory names (and other special names in listings)
     DiffAdd = { bg = c.diff.add }, -- diff mode: Added line |diff.txt|
     DiffChange = { bg = c.diff.change }, -- diff mode: Changed line |diff.txt|
@@ -92,7 +92,7 @@ function M.setup(config)
     Identifier = { fg = c.magenta, style = config.variableStyle }, -- (preferred) any variable name
     Function = { fg = c.blue, style = config.functionStyle }, -- function name (also: methods for classes)
 
-    Statement = { fg = c.magenta }, -- (preferred) any statement
+    Statement = { fg = c.red }, -- (preferred) any statement
     -- Conditional   = { }, --  if, then, else, endif, switch, etc.
     -- Repeat        = { }, --   for, do, while, etc.
     -- Label         = { }, --    case, default, etc.
@@ -106,7 +106,7 @@ function M.setup(config)
     -- Macro         = { }, --    same as Define
     -- PreCondit     = { }, --  preprocessor #if, #else, #endif, etc.
 
-    Type = { fg = c.blue1 }, -- (preferred) int, long, char, etc.
+    Type = { fg = c.red1 }, -- (preferred) int, long, char, etc.
     -- StorageClass  = { }, -- static, register, volatile, etc.
     -- Structure     = { }, --  struct, union, enum, etc.
     -- Typedef       = { }, --  A typedef

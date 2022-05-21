@@ -19,10 +19,11 @@ function M.setup(config)
     terminal_black = "#414868",
     fg = "#c0caf5",
     fg_dark = "#a9b1d6",
-    fg_gutter = "#3b4261",
+    fg_gutter = "#613B3B",
     dark3 = "#545c7e",
-    comment = "#565f89",
-    dark5 = "#737aa2",
+    comment = "#7A2222",
+    dark5 = "#F79797",
+    crosshair = "#0F0707",
     blue0 = "#3d59a1",
     blue = "#7aa2f7",
     cyan = "#7dcfff",
@@ -47,7 +48,7 @@ function M.setup(config)
   }
   if config.style == "night" or config.style == "day" or vim.o.background == "light" then
     colors.bg = "#1a1b26"
-    colors.bg_dark = "#16161e"
+    colors.bg_dark = "#1C0303"
   end
   util.bg = colors.bg
   util.day_brightness = config.dayBrightness
